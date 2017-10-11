@@ -4,19 +4,22 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
+
 public class GlobalConfigReader {
 	private static GlobalConfigReader instance = null;
+	private static Logger LOG = Logger.getLogger(GlobalConfigReader.class);
 	private static Properties prop = null;
 	private GlobalConfigReader() {};
 	
 	public static GlobalConfigReader getInstance () {
 		if(null == instance) {
-			InputStream inStream = GlobalConfigReader.class.getResourceAsStream("GlobalConf.properties");
+			InputStream inStream = GlobalConfigReader.class.getResourceAsStream("/GlobalConf.properties");
 		    prop = new Properties();
 			try {
 				prop.load(inStream);
 			} catch (IOException e) {
-				
+				LOG.debug("Exception while reading Global Configuration propeties");
 			}
 			instance = new GlobalConfigReader();
 		}
