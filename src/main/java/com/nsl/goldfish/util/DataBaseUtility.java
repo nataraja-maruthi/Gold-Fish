@@ -28,6 +28,7 @@ public class DataBaseUtility {
 
 		} catch (Exception e) {
 			LOG.debug("Exception while getting DB connection " + e.getMessage());
+			LOG.debug(e);
 		}
 		return connection;
 	}
@@ -50,6 +51,7 @@ public class DataBaseUtility {
 			return resultList;	
 		} catch (SQLException e) {
 			LOG.debug("Exception whilte Fetching data" + e.getMessage());
+			LOG.debug(e);
 			return null;
 		}
 	}
