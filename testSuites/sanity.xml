@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Sanity_Test">
+
+  <test name="Sanity">
+    <classes>
+       <class name="com.nsl.goldfisl.qa.feature1.testcase.TestFeature1" />
+    </classes>
+  </test>
+  
+  
+  
+</suite>  

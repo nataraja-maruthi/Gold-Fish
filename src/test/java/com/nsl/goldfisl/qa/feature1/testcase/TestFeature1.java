@@ -8,16 +8,16 @@ import org.testng.annotations.Test;
 
 import com.nsl.goldfish.qa.GoldFishTestHelpher;
 
-public class TestFeature1 extends GoldFishTestHelpher {
+public class TestFeature1 extends GoldFishTestHelpher{
 	
 	static Logger LOG = Logger.getLogger(TestFeature1.class);
 	
 	@Test
 	public static void testDbData() {
-		List<Map<String,String>> executeAndGetColumnOutput = dbUtil.executeAndGetColumnOutput(GET_EMPLOYEE_DATA);
-		System.out.println(executeAndGetColumnOutput);
-		LOG.debug(executeAndGetColumnOutput);
-		
+		List<Map<String,String>> output = dbUtil.executeAndGetColumnOutput(GET_EMPLOYEE_DATA);
+		System.out.println(output);
+		assertNotNull(output, "Db data should not be empty");
+		LOG.debug(output);
 	}
 
 }
