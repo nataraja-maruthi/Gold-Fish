@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+
+ 
+    <test name="Practice Grouping">
+ 
+        <groups>
+ 
+	    <run>
+ 
+		<include name="addition" />
+		<include name="concat"/>
+		<include name="get"/>
+		<include name="first"/>
+ 
+	    </run>
+ 
+	</groups>
+ 
+	<classes>
+ 
+	    <class name="com.nsl.goldfish.qa.feature5.testcase.TestingStringUtility" />
+ 
+	</classes>
+ 
+    </test>
+ 
+</suite>

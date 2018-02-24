@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameterization Test Suite">
+	<test name="parameterTestForStringAddition">
+	<parameter name="str1" value="suma"/>
+	<parameter name="str2" value="T"/>
+	<parameter name="expectedResult" value="SumaT"/>
+		<classes>
+			<class name="com.nsl.goldfish.qa.feature5.testcase.ParameterToAddString" />
+		</classes>
+	</test>
+	<test name="parameterTestForGetLastChar">
+	<parameter name="str1" value="suma"/>
+	<parameter name="expectedResult" value='a'/>
+		<classes>
+			<class name="com.nsl.goldfish.qa.feature5.testcase.ParameterToAddString" />
+		</classes>
+	</test>
+</suite>

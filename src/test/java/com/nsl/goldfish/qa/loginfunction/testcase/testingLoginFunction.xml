@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameterization Test Suite">
+	<test name="parameterTestForLoginFunction">
+	<parameter name="s1" value="Nataraja"/>
+	<parameter name="s2" value="Suma"/>
+	<parameter name="expectedResult" value="login should be successfull"/>
+		<classes>
+			<class name="com.nsl.goldfish.qa.loginfunction.testcase.TestCasesForLoginFunction" />
+		</classes>
+	</test>
+</suite>
