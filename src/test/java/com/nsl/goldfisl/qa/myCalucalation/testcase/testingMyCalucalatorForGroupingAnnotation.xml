@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+
+ 
+    <test name="Practice Grouping">
+ 
+        <groups>
+ 
+	    <run>
+ 
+		<include name="additionOfInteger" />
+		<include name="additionOfDouble"/>
+		<include name="substractionOfInteger"/>
+		<include name="substractionOfDouble"/>
+ 
+	    </run>
+ 
+	</groups>
+ 
+	<classes>
+ 
+	    <class name="com.nsl.goldfisl.qa.feature3.testcase.TestFeature3" />
+ 
+	</classes>
+ 
+    </test>
+ 
+</suite>
